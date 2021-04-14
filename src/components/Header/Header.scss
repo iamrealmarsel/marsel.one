@@ -1,0 +1,17 @@
+@use "@styles/breakpoints" as bp;
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.header_border {
+  border-bottom: solid 1px #cccccc;
+}
+
+.link {
+  display: block;
+  padding: 0 15px;
+}

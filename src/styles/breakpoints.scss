@@ -1,0 +1,22 @@
+@use "sass:map";
+@use '@styles/constants.scss' as const;
+
+$_breakpointMap: (
+  const.$xxl: false,
+  const.$xl: 1399px,
+  const.$lg: 1199px,
+  const.$md: 991px,
+  const.$sm: 767px,
+  const.$xs: 575px,
+);
+
+@mixin usebp($_breakpointList) {
+  $_current_breakpoint: map.get($_breakpointMap, $_breakpointList);
+  @if $_current_breakpoint {
+    @media (max-width: $_current_breakpoint) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

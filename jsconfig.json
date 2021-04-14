@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@styles/*": ["./src/styles/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
