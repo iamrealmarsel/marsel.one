@@ -1,1 +1,0 @@
-$((function(){$(".slider").slick({dots:!0,arrows:!1,autoplay:!0,autoplaySpeed:3e3,pauseOnFocus:!1,speed:600,slidesToShow:1,slidesToScroll:1}),Modernizr.testProp("mixBlendMode")||$("html").addClass("no-blend")}));
