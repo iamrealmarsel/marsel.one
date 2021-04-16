@@ -19,7 +19,7 @@ function WorkPreview() {
       <iframe
         title='webinar fifnance'
         // src='https://iamrealmarsel.github.io/webinar-finance/'
-        src='/work/amarkets-africa'
+        src='/work/amarkets-africa/'
         onLoad={handleIframeLoad}
         className={`${cn.preview} ${loading ? cn.hidden : ''}`}
       ></iframe>

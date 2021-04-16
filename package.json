@@ -5,22 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "gh-h": "gh-pages --help",
+    "push": "gh-pages --dist 'dist' -m 'deploy updates'",
     "build:prod": "webpack",
     "build": "webpack",
-    "start": "webpack serve",
-    "gh-h": "gh-pages --help",
-    "deploy": "npm run build:prod && gh-pages --dist 'dist' -m 'deploy updates'"
+    "deploy": "npm run build:prod && gh-pages --dist 'dist' -m 'deploy updates'",
+    "start": "webpack serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m01key/marsel.one.git"
+    "url": "git+https://github.com/iamrealmarsel/marsel.one.git"
   },
   "author": "mars",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/m01key/marsel.one/issues"
+    "url": "https://github.com/iamrealmarsel/marsel.one/issues"
   },
-  "homepage": "https://github.com/m01key/marsel.one#readme",
+  "homepage": "https://github.com/iamrealmarsel/marsel.one#readme",
   "devDependencies": {
     "@babel/core": "7.13.10",
     "@babel/preset-env": "7.13.12",

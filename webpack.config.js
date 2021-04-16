@@ -27,6 +27,7 @@ const config = {
     contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
     open: true,
+    // publicPath: '/',
     // hot: true
   },
   optimization: {
