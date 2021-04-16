@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "create_dist": "git worktree remove dist && git worktree add dist gh-pages",
     "push_dist": "git add --all && git commit -m 'deploy updates' && git push origin gh-pages",
-    "deploy": "npm run create_dist && npm run build && cd dist && npm run push_dist && cd ..",
+    "deploy": "npm run create_dist && npm run build && cd dist && npm run push_dist",
     "build:dev": "webpack",
     "build": "webpack",
     "start": "webpack serve"
