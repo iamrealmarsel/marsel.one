@@ -43,8 +43,9 @@ const config = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: './src/images', to: 'img' },
-        { from: './src/work', to: 'work' },
+        { from: './src/assets/images', to: 'img' },
+        { from: './src/assets/work', to: 'work' },
+        { from: './src/assets/CNAME', to: './' },
       ],
     }),
     // new CleanWebpackPlugin(),
@@ -81,7 +82,7 @@ const config = {
   },
 };
 
-if (npmScript === 'build') {
+if (npmScript === 'build:prod') {
   config.mode = 'production';
   config.devtool = false;
 }
