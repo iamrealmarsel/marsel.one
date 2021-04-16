@@ -3,7 +3,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const config = {
@@ -11,6 +11,7 @@ const config = {
   output: {
     filename: 'js/main.[hash].js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
   mode: 'development',
   devtool: 'eval-source-map',
@@ -46,7 +47,7 @@ const config = {
         { from: './src/work', to: 'work' },
       ],
     }),
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
