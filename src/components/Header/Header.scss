@@ -1,17 +1,37 @@
-@use "@styles/breakpoints" as bp;
+@use '@styles/constants' as const;
+@use '@styles/grid';
 
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 15px 0;
+  @include grid.setContainerFluid(
+    (
+      const.$xxl: 10px,
+    ),
+    (
+      const.$xxl: 15px,
+    )
+  );
+  @include grid.setRow(center);
+
+  position: relative;
+  margin-bottom: 15px;
 }
 
-.header_border {
-  border-bottom: solid 1px #cccccc;
+.active {
+  font-weight: bold;
 }
 
 .link {
+  padding: 0 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.logoGithub {
+  position: absolute;
   display: block;
-  padding: 0 15px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
 }

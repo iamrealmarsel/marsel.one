@@ -3,17 +3,16 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const config = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
-    filename: 'js/main.[hash].js',
+    filename: 'js/main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  mode: 'development',
   devtool: 'eval-source-map',
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -21,14 +20,14 @@ const config = {
       '@styles': path.resolve(__dirname, 'src/styles'),
       '@components': path.resolve(__dirname, 'src/components'),
       '@pages': path.resolve(__dirname, 'src/pages'),
+      '@store': path.resolve(__dirname, 'src/store'),
+      '@helpers': path.resolve(__dirname, 'src/helpers'),
     },
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
     open: true,
-    // publicPath: '/',
-    // hot: true
   },
   optimization: {
     minimizer: [
@@ -38,33 +37,22 @@ const config = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
-    new MiniCssExtractPlugin({
-      filename: 'css/main.[hash].css',
-    }),
+    new HtmlWebpackPlugin({ template: './src/assets/index.html' }),
     new CopyWebpackPlugin({
       patterns: [
         { from: './src/assets/images', to: 'img' },
-        { from: './src/assets/work', to: 'work' },
         { from: './src/assets/CNAME', to: './' },
+        { from: './src/assets/robots.txt', to: './' },
       ],
     }),
-    // new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-      {
         test: /\.scss$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: 'style-loader',
           },
           {
             loader: 'css-loader',
@@ -79,13 +67,27 @@ const config = {
           },
         ],
       },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
     ],
   },
 };
 
 if (npmScript === 'build:prod') {
   config.mode = 'production';
+  config.output.filename = 'js/main.[hash].js';
   config.devtool = false;
+  config.plugins.push(
+    new MiniCssExtractPlugin({
+      filename: 'css/main.[hash].css',
+    })
+  );
+  config.module.rules[0].use[0].loader = MiniCssExtractPlugin.loader;
 }
 
 module.exports = config;

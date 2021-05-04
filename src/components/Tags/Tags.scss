@@ -1,13 +1,28 @@
+@use '@styles/constants' as const;
+@use '@styles/grid';
+
+.container {
+  @include grid.setContainerFluid(
+    (
+      const.$xxl: 10px,
+    )
+  );
+}
+
 .tags {
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
   margin-bottom: 30px;
 }
 
 .tag {
-  background-image: radial-gradient(53% 200% at 45% 60%, #623975 0, #66d9fb 100%);
-  border-radius: 30px;
+  background-color: transparent;
+  border: dashed 1px var(--color-blue2);
   padding: 0 20px;
+  margin-right: 10px;
   cursor: pointer;
+  transition: 0.1s;
+}
+
+.active {
+  background-color: var(--color-blue2);
+  color: var(--color-primary-white);
 }

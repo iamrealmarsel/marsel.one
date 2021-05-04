@@ -1,0 +1,37 @@
+@use '@styles/constants' as const;
+@use '@styles/grid';
+
+.footer {
+  @include grid.setContainerFluid(
+    (
+      const.$xxl: 10px,
+    ),
+    (
+      const.$xxl: 15px,
+    )
+  );
+  @include grid.setRow(center);
+
+  position: relative;
+  margin-top: auto;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.link {
+  padding: 0 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.logoGithub {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+}

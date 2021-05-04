@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gh-h": "gh-pages --help",
-    "push": "gh-pages --dist 'dist' -m 'deploy updates'",
+    "push": "gh-pages --dist 'dist' --message 'deploy updates'",
     "build:prod": "webpack",
     "build": "webpack",
-    "deploy": "npm run build:prod && gh-pages --dist 'dist' -m 'deploy updates'",
+    "deploy": "npm run build:prod && gh-pages --dist 'dist' --message 'deploy updates'",
     "start": "webpack serve"
   },
   "repository": {
@@ -44,6 +44,7 @@
     "sass": "1.32.8",
     "sass-loader": "11.0.1",
     "smart-grid": "^2.1.2",
+    "style-loader": "2.0.0",
     "terser-webpack-plugin": "5.1.1",
     "webpack": "5.24.3",
     "webpack-cli": "4.5.0",

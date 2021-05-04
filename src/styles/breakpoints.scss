@@ -1,5 +1,5 @@
 @use "sass:map";
-@use '@styles/constants.scss' as const;
+@use '@styles/constants' as const;
 
 $_breakpointMap: (
   const.$xxl: false,

@@ -1,27 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './WorkList.scss';
+import PropTypes from 'prop-types';
+import WorkItem from '@components/WorkItem';
+import cn from './WorkList.scss';
 
-function WorkList() {
+function WorkList({ workList }) {
   return (
-    <div className={styles.workList}>
-      <Link className={styles.workItem} to='/work-preview'>
-        <img src='img/case1.png' alt='' />
-      </Link>
-      <Link className={styles.workItem} to='/work-preview'>
-        <img src='img/case2.png' alt='' />
-      </Link>
-      <Link className={styles.workItem} to='/work-preview'>
-        <img src='img/case1.png' alt='' />
-      </Link>
-      <Link className={styles.workItem} to='/work-preview'>
-        <img src='img/case2.png' alt='' />
-      </Link>
-      <Link className={styles.workItem} to='/work-preview'>
-        <img src='img/case1.png' alt='' />
-      </Link>
+    <div className={cn.container}>
+      <div className={cn.workList}>
+        {workList.map((workItem) => (
+          <WorkItem
+            url={workItem.url}
+            key={workItem.url}
+            srcPreview={workItem.srcPreview}
+            urlGithub={workItem.urlGithub}
+            tags={workItem.tags}
+          />
+        ))}
+      </div>
     </div>
   );
 }
+
+WorkList.propTypes = {
+  workList: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default WorkList;

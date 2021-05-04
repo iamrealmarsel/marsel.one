@@ -1,16 +1,15 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import Work from './Work';
-import WorkPreview from './WorkPreview';
-import About from './About';
+import { Path } from '@store';
+import WorkPage from './WorkPage';
+import AboutPage from './AboutPage';
 
 function Routing() {
   return (
     <HashRouter>
       <Switch>
-        <Route exact path='/' component={Work} />
-        <Route exact path='/work-preview' component={WorkPreview} />
-        <Route exact path='/about' component={About} />
+        <Route exact path={Path.WORK} component={WorkPage} />
+        <Route exact path={Path.ABOUT} component={AboutPage} />
       </Switch>
     </HashRouter>
   );

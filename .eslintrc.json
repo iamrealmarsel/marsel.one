@@ -10,7 +10,9 @@
         "map": [
           ["@styles", "./src/styles"],
           ["@components", "./src/components"],
-          ["@pages", "./src/pages"]
+          ["@pages", "./src/pages"],
+          ["@store", "./src/store"],
+          ["@helpers", "./src/helpers"]
         ]
       }
     }

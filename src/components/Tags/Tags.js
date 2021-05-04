@@ -1,17 +1,30 @@
 import React from 'react';
-import classNames from 'classnames/bind';
-import styles from './Tags.scss';
+import PropTypes from 'prop-types';
+import cn from './Tags.scss';
 
-const cx = classNames.bind(styles);
-
-function Tags() {
+function Tags({ tags, currentTags, onTagClick }) {
   return (
-    <div className={cx('tags')}>
-      <span className={cx('tag')}>landing page</span>
-      <span className={cx('tag')}>webpack</span>
-      <span className={cx('tag')}>react</span>
+    <div className={cn.container}>
+      <div className={cn.tags}>
+        {tags.map((tag) => (
+          <button
+            className={`${cn.tag} ${currentTags.includes(tag) ? cn.active : ''} `}
+            type='button'
+            onClick={() => onTagClick(tag)}
+            key={tag}
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
+
+Tags.propTypes = {
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  currentTags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onTagClick: PropTypes.func.isRequired,
+};
 
 export default Tags;

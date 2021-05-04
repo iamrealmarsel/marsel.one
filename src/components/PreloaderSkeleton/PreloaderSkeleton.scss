@@ -1,6 +1,6 @@
-@use '@styles/grid.scss';
-@use '@styles/constants.scss' as const;
-@use '@styles/breakpoints.scss' as bp;
+@use '@styles/constants' as const;
+@use '@styles/breakpoints' as bp;
+@use '@styles/grid';
 
 @mixin model {
   width: 100%;
@@ -14,12 +14,12 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -10%;
-    right: -10%;
+    left: -20%;
+    right: -20%;
     bottom: 0;
-    background-image: linear-gradient(to right, transparent, #f1f1f183, transparent);
-    transform: translate3d(-90%, 0, 0);
-    animation: wave 2s infinite ease-in;
+    background-image: linear-gradient(to right, transparent, #f1f1f1b9, transparent);
+    transform: translate3d(-100%, 0, 0);
+    animation: wave 1.5s infinite ease-in;
   }
 }
 
@@ -40,7 +40,7 @@
 }
 
 .container {
-  @include grid.setContainer(
+  @include grid.setContainerFluid(
     (
       const.$xxl: 15px,
     )

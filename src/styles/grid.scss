@@ -1,5 +1,5 @@
-@use '@styles/breakpoints.scss' as bp;
-@use '@styles/constants.scss' as const;
+@use '@styles/constants' as const;
+@use '@styles/breakpoints' as bp;
 
 $_gridCols: 12;
 
@@ -9,7 +9,7 @@ $maxWidth_lg: 982px;
 $maxWidth_md: 758px;
 $maxWidth_sm: 566px;
 
-$_max_width_list: (
+$_maxWidthList: (
   const.$xxl: $maxWidth_xxl,
   const.$xl: $maxWidth_xl,
   const.$lg: $maxWidth_lg,
@@ -17,24 +17,46 @@ $_max_width_list: (
   const.$sm: $maxWidth_sm,
 );
 
-@mixin setContainer($_paddingList: null, $_limited: false) {
+@mixin setContainerFluid($_paddingXList: null, $_paddingYList: null) {
   width: 100%;
+  max-width: $maxWidth_xxl;
   margin: 0 auto;
 
-  @if $_paddingList {
-    @include _setContainerPadding($_paddingList);
+  @if $_paddingXList {
+    @include _setContainerPaddingX($_paddingXList);
   }
 
-  @if $_limited {
-    @include _setContainerSize();
-  } @else {
-    max-width: $maxWidth_xxl;
+  @if $_paddingYList {
+    @include _setContainerPaddingY($_paddingYList);
   }
 }
 
-@mixin setRow() {
+@mixin setContainer($_paddingXList: null, $_paddingYList: null) {
+  width: 100%;
+  margin: 0 auto;
+
+  @if $_paddingXList {
+    @include _setContainerPaddingX($_paddingXList);
+  }
+
+  @if $_paddingYList {
+    @include _setContainerPaddingY($_paddingYList);
+  }
+
+  @include _setContainerSize();
+}
+
+@mixin setRow($_justify: null, $_align: null) {
   display: flex;
   flex-wrap: wrap;
+
+  @if $_justify {
+    justify-content: $_justify;
+  }
+
+  @if $_align {
+    align-items: $_align;
+  }
 }
 
 @mixin setRowGutter($_gutterXList: null, $_gutterYList: null) {
@@ -90,18 +112,27 @@ $_max_width_list: (
 }
 
 @mixin _setContainerSize() {
-  @each $_bp, $_max_width in $_max_width_list {
+  @each $_bp, $_max_width in $_maxWidthList {
     @include bp.usebp($_bp) {
       max-width: $_max_width;
     }
   }
 }
 
-@mixin _setContainerPadding($_paddingList) {
-  @each $_bp, $_padding in $_paddingList {
+@mixin _setContainerPaddingX($_paddingXList) {
+  @each $_bp, $_padding in $_paddingXList {
     @include bp.usebp($_bp) {
       padding-left: $_padding;
       padding-right: $_padding;
+    }
+  }
+}
+
+@mixin _setContainerPaddingY($_paddingYList) {
+  @each $_bp, $_padding in $_paddingYList {
+    @include bp.usebp($_bp) {
+      padding-top: $_padding;
+      padding-bottom: $_padding;
     }
   }
 }
