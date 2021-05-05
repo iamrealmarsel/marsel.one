@@ -42,7 +42,6 @@ const config = {
       patterns: [
         { from: './src/assets/images', to: 'img' },
         { from: './src/assets/CNAME', to: './' },
-        { from: './src/assets/robots.txt', to: './' },
       ],
     }),
   ],

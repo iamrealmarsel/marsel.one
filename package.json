@@ -4,12 +4,12 @@
   "description": "about me",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gh-h": "gh-pages --help",
-    "push": "gh-pages --dist 'dist' --message 'deploy updates'",
+    "test": "eslint --ext .jsx --ext .js src/",
+    "gh-pages:help": "gh-pages --help",
+    "push": "gh-pages --dist 'dist' --message 'deployed updates'",
     "build:prod": "webpack",
     "build": "webpack",
-    "deploy": "npm run build:prod && gh-pages --dist 'dist' --message 'deploy updates'",
+    "deploy": "npm run build:prod && gh-pages --dist 'dist' --message 'deployed updates'",
     "start": "webpack serve"
   },
   "repository": {

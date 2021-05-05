@@ -1,6 +1,5 @@
 export default [
   {
-    // path: '/service-for-all',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/service-for-all',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/service-for-all',
     srcPreview: 'multi-page/service-for-all.jpg',
@@ -8,7 +7,6 @@ export default [
     year: '2017 June',
   },
   {
-    // path: '/euro-pharma',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/euro-pharma',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/euro-pharma',
     srcPreview: 'multi-page/euro-pharma.jpg',
@@ -16,7 +14,6 @@ export default [
     year: '2017 October',
   },
   {
-    // path: '/express-delivery',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/express-delivery',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/express-delivery',
     srcPreview: 'multi-page/express-delivery.jpg',
@@ -24,7 +21,6 @@ export default [
     year: '2017 May',
   },
   {
-    // path: '/himtex',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/himtex',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/himtex',
     srcPreview: 'multi-page/himtex.jpg',
@@ -32,7 +28,6 @@ export default [
     year: '2017 November',
   },
   {
-    // path: '/kd',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/kd',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/kd',
     srcPreview: 'multi-page/kd.jpg',
@@ -40,7 +35,6 @@ export default [
     year: '2017 March',
   },
   {
-    // path: '/kommunal-service',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/kommunal-service',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/kommunal-service',
     srcPreview: 'multi-page/kommunal-service.jpg',
@@ -48,7 +42,6 @@ export default [
     year: '2017 May',
   },
   {
-    // path: '/neva-energy',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/neva-energy',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/neva-energy',
     srcPreview: 'multi-page/neva-energy.jpg',
@@ -56,7 +49,6 @@ export default [
     year: '2018 April',
   },
   {
-    // path: '/programmatic-lab',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/programmatic-lab/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/programmatic-lab',
     srcPreview: 'multi-page/programmatic-lab.jpg',
@@ -64,7 +56,6 @@ export default [
     year: '2018 January',
   },
   {
-    // path: '/sand-order',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/sand-order',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/sand-order',
     srcPreview: 'multi-page/sand-order.jpg',
@@ -72,7 +63,6 @@ export default [
     year: '2017 February',
   },
   {
-    // path: '/swimming-academy',
     url: 'https://iamrealmarsel.github.io/projects/multi-page/swimming-academy/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/swimming-academy',
     srcPreview: 'multi-page/swimming-academy.jpg',

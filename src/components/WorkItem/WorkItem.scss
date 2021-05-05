@@ -43,6 +43,10 @@ $_duration: 0.3s;
   transform: translate3d(0, 100%, 0);
 }
 
+.imagePreview {
+  cursor: pointer;
+}
+
 .linkPreview {
   display: block;
   width: 100%;

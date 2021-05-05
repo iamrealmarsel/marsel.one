@@ -56,7 +56,7 @@ function WorkItem({ url, srcPreview, urlGithub, tags }) {
         onMouseLeave={handleWrapperPreviewLeave}
       >
         <div className={cn.preview} ref={previewRef} onMouseMove={handleWrapperPreviewMouseMove}>
-          <img src={`img/projects/${srcPreview}`} alt='project' />
+          <img className={cn.imagePreview} src={`img/projects/${srcPreview}`} alt='project' />
           <div className={cn.overlay} ref={overlayRef}>
             <a href={url} className={cn.linkPreview} target='_blank' rel='noreferrer'>
               link

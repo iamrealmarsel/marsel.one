@@ -1,16 +1,14 @@
 export default [
   {
-    // path: '/cinemaddict',
-    url: 'https://iamrealmarsel.github.io/projects/spa/cinemaddict/public',
-    urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/spa/cinemaddict',
+    url: 'https://iamrealmarsel.github.io/151240-cinemaddict-12/public',
+    urlGithub: 'https://github.com/iamrealmarsel/151240-cinemaddict-12',
     srcPreview: 'spa/cinemaddict.jpg',
     tags: ['spa'],
     year: '2020 October',
   },
   {
-    // path: '/what-to-watch',
-    url: 'https://iamrealmarsel.github.io/projects/spa/what-to-watch/public',
-    urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/spa/what-to-watch',
+    url: 'https://iamrealmarsel.github.io/151240-what-to-watch-5/public',
+    urlGithub: 'https://github.com/iamrealmarsel/151240-what-to-watch-5',
     srcPreview: 'spa/what-to-watch.jpg',
     tags: ['spa', 'react'],
     year: '2021 April',

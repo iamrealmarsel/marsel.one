@@ -1,6 +1,5 @@
 export default [
   {
-    // path: '/email-amarkets-demo-account-ir',
     url: 'https://iamrealmarsel.github.io/projects/email/amarkets-demo-account/index-ir.html',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/email/amarkets-demo-account/index-ir.html',
     srcPreview: 'email/amarkets-demo-account-ir.jpg',
@@ -8,7 +7,6 @@ export default [
     year: '2019 March',
   },
   {
-    // path: '/email-amarkets-welcome-ar',
     url: 'https://iamrealmarsel.github.io/projects/email/amarkets-welcome/index-ar.html',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/email/amarkets-welcome/index-ar.html',
     srcPreview: 'email/amarkets-welcome-ar.jpg',
@@ -16,7 +14,6 @@ export default [
     year: '2019 March',
   },
   {
-    // path: '/email-atol-news',
     url: 'https://iamrealmarsel.github.io/projects/email/atol-news',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/email/atol-news',
     srcPreview: 'email/atol-news.jpg',
@@ -24,7 +21,6 @@ export default [
     year: '2018 June',
   },
   {
-    // path: '/email-fortfamily-about',
     url: 'https://iamrealmarsel.github.io/projects/email/fortfamily-about',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/email/fortfamily-about',
     srcPreview: 'email/fortfamily-about.jpg',
@@ -32,7 +28,6 @@ export default [
     year: '2019 July',
   },
   {
-    // path: '/email-fortfamily-investments',
     url: 'https://iamrealmarsel.github.io/projects/email/fortfamily-investments',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/email/fortfamily-investments',
     srcPreview: 'email/fortfamily-investments.jpg',
@@ -40,7 +35,6 @@ export default [
     year: '2019 July',
   },
   {
-    // path: '/email-fortfamily-partner-results',
     url: 'https://iamrealmarsel.github.io/projects/email/fortfamily-partner-results',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/email/fortfamily-partner-results',
     srcPreview: 'email/fortfamily-partner-results.jpg',

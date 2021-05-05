@@ -1,6 +1,5 @@
 export default [
   {
-    // path: '/amarkets-10-years',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/10-years',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/10-years',
     srcPreview: 'one-page/amarkets-10-years.jpg',
@@ -8,7 +7,6 @@ export default [
     year: '2017 October',
   },
   {
-    // path: '/amarkets-africa',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/africa/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/africa',
     srcPreview: 'one-page/amarkets-africa.jpg',
@@ -16,7 +14,6 @@ export default [
     year: '2018 April',
   },
   {
-    // path: '/amarkets-alfaforex',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/alfaforex/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/alfaforex',
     srcPreview: 'one-page/amarkets-alfaforex.jpg',
@@ -24,7 +21,6 @@ export default [
     year: '2018 March',
   },
   {
-    // path: '/amarkets-apilot',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/apilot/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/apilot',
     srcPreview: 'one-page/amarkets-apilot.jpg',
@@ -32,7 +28,6 @@ export default [
     year: '2018 March',
   },
   {
-    // path: '/amarkets-bitcoin',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/bitcoin/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/bitcoin',
     srcPreview: 'one-page/amarkets-bitcoin.jpg',
@@ -40,7 +35,6 @@ export default [
     year: '2018 July',
   },
   {
-    // path: '/amarkets-casino',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/casino/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/casino',
     srcPreview: 'one-page/amarkets-casino.jpg',
@@ -48,7 +42,6 @@ export default [
     year: '2018 March',
   },
   {
-    // path: '/amarkets-indonesia',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/indonesia/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/indonesia',
     srcPreview: 'one-page/amarkets-indonesia.jpg',
@@ -56,7 +49,6 @@ export default [
     year: '2018 February',
   },
   {
-    // path: '/amarkets-no-deposit-iphonesx',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/no-deposit-iphonesx',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/no-deposit-iphonesx',
     srcPreview: 'one-page/amarkets-no-deposit-iphonesx.jpg',
@@ -64,7 +56,6 @@ export default [
     year: '2018 August',
   },
   {
-    // path: '/amarkets-webinar-korzhenevsky',
     url: 'https://iamrealmarsel.github.io/projects/one-page/amarkets/webinar-korzhenevsky/app',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/amarkets/webinar-korzhenevsky',
     srcPreview: 'one-page/amarkets-webinar-korzhenevsky.jpg',
@@ -72,7 +63,6 @@ export default [
     year: '2018 August',
   },
   {
-    // path: '/atol-online',
     url: 'https://iamrealmarsel.github.io/projects/one-page/atol-online',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/atol-online',
     srcPreview: 'one-page/atol-online.jpg',
@@ -80,7 +70,6 @@ export default [
     year: '2017 June',
   },
   {
-    // path: '/atol-service',
     url: 'https://iamrealmarsel.github.io/projects/one-page/atol-service',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/atol-service',
     srcPreview: 'one-page/atol-service.jpg',
@@ -88,7 +77,6 @@ export default [
     year: '2017 July',
   },
   {
-    // path: '/eat-to-be-fit',
     url: 'https://iamrealmarsel.github.io/projects/one-page/eat-to-be-fit',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/eat-to-be-fit',
     srcPreview: 'one-page/eat-to-be-fit.jpg',
@@ -96,7 +84,6 @@ export default [
     year: '2017 May',
   },
   {
-    // path: '/express-test',
     url: 'https://iamrealmarsel.github.io/projects/one-page/express-test',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/express-test',
     srcPreview: 'one-page/express-test.jpg',
@@ -104,7 +91,6 @@ export default [
     year: '2019 April',
   },
   {
-    // path: '/fit-n-go',
     url: 'https://iamrealmarsel.github.io/projects/one-page/fit-n-go/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/fit-n-go',
     srcPreview: 'one-page/fit-n-go.jpg',
@@ -112,7 +98,6 @@ export default [
     year: '2018 January',
   },
   {
-    // path: '/fortfamily-investments',
     url: 'https://iamrealmarsel.github.io/projects/one-page/fortfamily-investments',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/fortfamily-investments',
     srcPreview: 'one-page/fortfamily-investments.jpg',
@@ -120,7 +105,6 @@ export default [
     year: '2019 July',
   },
   {
-    // path: '/fortfamily-startup',
     url: 'https://iamrealmarsel.github.io/projects/one-page/fortfamily-startup',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/fortfamily-startup',
     srcPreview: 'one-page/fortfamily-startup.jpg',
@@ -128,7 +112,6 @@ export default [
     year: '2019 October',
   },
   {
-    // path: '/jet-skills',
     url: 'https://iamrealmarsel.github.io/projects/one-page/jet-skills',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/jet-skills',
     srcPreview: 'one-page/jet-skills.jpg',
@@ -136,7 +119,6 @@ export default [
     year: '2017 November',
   },
   {
-    // path: '/keksobooking',
     url: 'https://iamrealmarsel.github.io/projects/one-page/keksobooking',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/keksobooking',
     srcPreview: 'one-page/keksobooking.jpg',
@@ -144,7 +126,6 @@ export default [
     year: '2018 May',
   },
   {
-    // path: '/mark-invest',
     url: 'https://iamrealmarsel.github.io/projects/one-page/mark-invest',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/mark-invest',
     srcPreview: 'one-page/mark-invest.jpg',
@@ -152,7 +133,6 @@ export default [
     year: '2017 Sep',
   },
   {
-    // path: '/yurius',
     url: 'https://iamrealmarsel.github.io/projects/one-page/yurius',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/yurius',
     srcPreview: 'one-page/yurius.jpg',
@@ -160,7 +140,6 @@ export default [
     year: '2017 November',
   },
   {
-    // path: '/yorso',
     url: 'https://iamrealmarsel.github.io/projects/one-page/yorso',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/yorso',
     srcPreview: 'one-page/yorso.jpg',
