@@ -1,0 +1,92 @@
+@use '@styles/helpers' as *;
+
+.container {
+  @include setContainerFluid(
+    (
+      $xxl: 20px,
+    )
+  );
+  max-width: 1140px;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  font-family: $fontFamilyTitle;
+  font-weight: 300;
+  font-size: 40px;
+  color: var(--color-primary-white);
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 10px;
+    left: -10px;
+    right: -100px;
+    background-color: var(--color-orange);
+    z-index: -1;
+    animation: shake1 20s infinite ease-in-out;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: -20px;
+    right: -90px;
+    background-color: var(--color-blue2);
+    z-index: -1;
+    animation: shake2 20s infinite ease-in-out;
+  }
+}
+
+@keyframes shake1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(-10px, 10px, 0);
+  }
+  50% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes shake2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(10px, -10px, 0);
+  }
+  50% {
+    transform: translate3d(10px, 0, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.link {
+  font-size: 20px;
+  text-decoration: none;
+}

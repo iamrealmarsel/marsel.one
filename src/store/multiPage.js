@@ -1,3 +1,5 @@
+import Path from './path';
+
 export default [
   {
     url: 'https://iamrealmarsel.github.io/projects/multi-page/service-for-all',
@@ -14,7 +16,8 @@ export default [
     year: '2017 October',
   },
   {
-    url: 'https://iamrealmarsel.github.io/projects/multi-page/express-delivery',
+    // url: 'https://iamrealmarsel.github.io/projects/multi-page/express-delivery',
+    url: `/#${Path.work.EXPRESS_DELIVERY}`,
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/express-delivery',
     srcPreview: 'multi-page/express-delivery.jpg',
     tags: ['multi page'],

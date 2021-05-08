@@ -1,16 +1,17 @@
-@use '@styles/constants' as const;
-@use '@styles/grid';
+// @use '@styles/constants' as const;
+// @use '@styles/grid';
+@use '@styles/helpers' as *;
 
 .header {
-  @include grid.setContainerFluid(
+  @include setContainerFluid(
     (
-      const.$xxl: 10px,
+      $xxl: 10px,
     ),
     (
-      const.$xxl: 15px,
+      $xxl: 15px,
     )
   );
-  @include grid.setRow(center);
+  @include setRow(center);
 
   position: relative;
   margin-bottom: 15px;
@@ -25,6 +26,10 @@
   margin: 0 10px;
   text-decoration: none;
   font-size: 18px;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .logoGithub {

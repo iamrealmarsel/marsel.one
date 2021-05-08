@@ -1,22 +1,23 @@
-@use '@styles/constants' as const;
-@use '@styles/grid';
+// @use '@styles/constants' as const;
+// @use '@styles/grid';
+@use '@styles/helpers' as *;
 
 .container {
-  @include grid.setContainerFluid(
+  @include setContainerFluid(
     (
-      const.$xxl: 10px,
+      $xxl: 10px,
     )
   );
 }
 
 .workList {
-  @include grid.setRow();
-  @include grid.setRowGutter(
+  @include setRow();
+  @include setRowGutter(
     (
-      const.$xxl: 10px,
+      $xxl: 10px,
     ),
     (
-      const.$xxl: 10px,
+      $xxl: 10px,
     )
   );
 }

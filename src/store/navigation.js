@@ -1,12 +1,9 @@
-export const Path = {
-  WORK: '/',
-  ABOUT: '/about',
-};
+import Path from './path';
 
 export default [
   {
     name: 'Work',
-    path: Path.WORK,
+    path: Path.work.ROOT,
   },
   {
     name: 'About',

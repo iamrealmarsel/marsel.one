@@ -13,7 +13,7 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  devtool: 'eval-source-map',
+  devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
@@ -64,6 +64,12 @@ const config = {
           {
             loader: 'sass-loader',
           },
+          // {
+          //   loader: 'sass-resources-loader',
+          //   options: {
+          //     resources: ['./src/styles/test.scss'],
+          //   },
+          // },
         ],
       },
       {

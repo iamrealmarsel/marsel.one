@@ -5,7 +5,6 @@ import Tags from '@components/Tags';
 import WorkList from '@components/WorkList';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
-import cn from '@styles/general.scss';
 
 function WorkPage({ location }) {
   const [currentTags, setTags] = useState([]);
@@ -22,7 +21,7 @@ function WorkPage({ location }) {
   }
 
   return (
-    <div className={cn.page}>
+    <div className='page'>
       <Header pathname={location.pathname} />
       <Tags tags={tags} currentTags={currentTags} onTagClick={handleTagClick} />
       <WorkList workList={workList} />

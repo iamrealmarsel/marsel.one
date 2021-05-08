@@ -1,20 +1,14 @@
-@use '@styles/constants' as const;
-@use '@styles/breakpoints' as bp;
+@use '../constants' as *;
+@use 'breakpoints' as *;
 
 $_gridCols: 12;
 
-$maxWidth_xxl: 1390px;
-$maxWidth_xl: 1190px;
-$maxWidth_lg: 982px;
-$maxWidth_md: 758px;
-$maxWidth_sm: 566px;
-
 $_maxWidthList: (
-  const.$xxl: $maxWidth_xxl,
-  const.$xl: $maxWidth_xl,
-  const.$lg: $maxWidth_lg,
-  const.$md: $maxWidth_md,
-  const.$sm: $maxWidth_sm,
+  $xxl: $maxWidth_xxl,
+  $xl: $maxWidth_xl,
+  $lg: $maxWidth_lg,
+  $md: $maxWidth_md,
+  $sm: $maxWidth_sm,
 );
 
 @mixin setContainerFluid($_paddingXList: null, $_paddingYList: null) {
@@ -62,7 +56,7 @@ $_maxWidthList: (
 @mixin setRowGutter($_gutterXList: null, $_gutterYList: null) {
   @if $_gutterXList {
     @each $_bp, $_gutter in $_gutterXList {
-      @include bp.usebp($_bp) {
+      @include usebp($_bp) {
         --gutterX: #{$_gutter};
         margin-left: calc(var(--gutterX) / -2);
         margin-right: calc(var(--gutterX) / -2);
@@ -77,7 +71,7 @@ $_maxWidthList: (
 
   @if $_gutterYList {
     @each $_bp, $_gutter in $_gutterYList {
-      @include bp.usebp($_bp) {
+      @include usebp($_bp) {
         --gutterY: #{$_gutter};
         margin-top: calc(var(--gutterY) * -1);
 
@@ -94,7 +88,7 @@ $_maxWidthList: (
     flex: 0 0 auto;
 
     @each $_bp, $_amount in $_colsList {
-      @include bp.usebp($_bp) {
+      @include usebp($_bp) {
         width: 100% / $_amount;
       }
     }
@@ -113,7 +107,7 @@ $_maxWidthList: (
 
 @mixin _setContainerSize() {
   @each $_bp, $_max_width in $_maxWidthList {
-    @include bp.usebp($_bp) {
+    @include usebp($_bp) {
       max-width: $_max_width;
     }
   }
@@ -121,7 +115,7 @@ $_maxWidthList: (
 
 @mixin _setContainerPaddingX($_paddingXList) {
   @each $_bp, $_padding in $_paddingXList {
-    @include bp.usebp($_bp) {
+    @include usebp($_bp) {
       padding-left: $_padding;
       padding-right: $_padding;
     }
@@ -130,7 +124,7 @@ $_maxWidthList: (
 
 @mixin _setContainerPaddingY($_paddingYList) {
   @each $_bp, $_padding in $_paddingYList {
-    @include bp.usebp($_bp) {
+    @include usebp($_bp) {
       padding-top: $_padding;
       padding-bottom: $_padding;
     }
@@ -139,7 +133,7 @@ $_maxWidthList: (
 
 @mixin _setUnitColSize($_colSizeList) {
   @each $_bp, $_size in $_colSizeList {
-    @include bp.usebp($_bp) {
+    @include usebp($_bp) {
       width: $_size;
     }
   }
@@ -147,7 +141,7 @@ $_maxWidthList: (
 
 @mixin _setBootstrapColSize($_colSizeList) {
   @each $_bp, $_size in $_colSizeList {
-    @include bp.usebp($_bp) {
+    @include usebp($_bp) {
       width: 100% / $_gridCols * $_size;
     }
   }

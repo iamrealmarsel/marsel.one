@@ -1,5 +1,6 @@
-@use '@styles/constants' as const;
-@use '@styles/grid';
+// @use '@styles/constants' as const;
+// @use '@styles/grid';
+@use '@styles/helpers' as *;
 
 $_duration: 0.3s;
 
@@ -192,9 +193,9 @@ $_duration: 0.3s;
 
 @for $i from 1 through 3 {
   .item:nth-child(7n + #{$i}) {
-    @include grid.setColSize(
+    @include setColSize(
       (
-        const.$xxl: 4,
+        $xxl: 4,
       ),
       true
     );
@@ -203,9 +204,9 @@ $_duration: 0.3s;
 
 @for $i from 4 through 7 {
   .item:nth-child(7n + #{$i}) {
-    @include grid.setColSize(
+    @include setColSize(
       (
-        const.$xxl: 3,
+        $xxl: 3,
       ),
       true
     );
@@ -214,10 +215,10 @@ $_duration: 0.3s;
 
 @for $i from 1 through 2 {
   .item:nth-child(5n + #{$i}) {
-    @include grid.setColSize(
+    @include setColSize(
       (
-        const.$md: 6,
-        const.$xs: 12,
+        $md: 6,
+        $xs: 12,
       ),
       true
     );
@@ -226,11 +227,11 @@ $_duration: 0.3s;
 
 @for $i from 3 through 5 {
   .item:nth-child(5n + #{$i}) {
-    @include grid.setColSize(
+    @include setColSize(
       (
-        const.$md: 4,
-        const.$sm: 6,
-        const.$xs: 12,
+        $md: 4,
+        $sm: 6,
+        $xs: 12,
       ),
       true
     );

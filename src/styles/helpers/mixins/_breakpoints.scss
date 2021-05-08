@@ -1,13 +1,13 @@
 @use "sass:map";
-@use '@styles/constants' as const;
+@use '../constants' as *;
 
 $_breakpointMap: (
-  const.$xxl: false,
-  const.$xl: 1399px,
-  const.$lg: 1199px,
-  const.$md: 991px,
-  const.$sm: 767px,
-  const.$xs: 575px,
+  $xxl: false,
+  $xl: 1399px,
+  $lg: 1199px,
+  $md: 991px,
+  $sm: 767px,
+  $xs: 575px,
 );
 
 @mixin usebp($_breakpointList) {
