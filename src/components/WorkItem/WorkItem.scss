@@ -44,6 +44,12 @@ $_duration: 0.3s;
   transform: translate3d(0, 100%, 0);
 }
 
+:global(.mobile) .overlay,
+:global(.tablet) .overlay {
+  transform: translate3d(0, 0, 0);
+  background-color: transparent;
+}
+
 .imagePreview {
   cursor: pointer;
 }

@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '@components/Header';
-import Footer from '@components/Footer';
+import MainLayout from '@layouts/MainLayout';
+import About from '@components/About';
 
 function AboutPage({ location }) {
   return (
-    <div className='page'>
-      <Header pathname={location.pathname} />
-      <div>Sooon ... !...</div>
-      <Footer pathname={location.pathname} />
-    </div>
+    <MainLayout location={location} container>
+      <About />
+    </MainLayout>
   );
 }
 

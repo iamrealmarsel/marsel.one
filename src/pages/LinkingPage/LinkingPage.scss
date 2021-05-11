@@ -3,7 +3,7 @@
 .container {
   @include setContainerFluid(
     (
-      $xxl: 20px,
+      $xxl: 25px,
     )
   );
   max-width: 1140px;
@@ -12,7 +12,6 @@
 .title {
   position: relative;
   display: inline-block;
-  font-family: $fontFamilyTitle;
   font-weight: 300;
   font-size: 40px;
   color: var(--color-primary-white);
@@ -30,7 +29,7 @@
     right: -100px;
     background-color: var(--color-orange);
     z-index: -1;
-    animation: shake1 20s infinite ease-in-out;
+    animation: floatOver 20s infinite ease-in-out;
   }
 
   &::before {
@@ -42,11 +41,15 @@
     right: -90px;
     background-color: var(--color-blue2);
     z-index: -1;
-    animation: shake2 20s infinite ease-in-out;
+    animation: floatUnder 20s infinite ease-in-out;
+  }
+
+  @include usebp($sm) {
+    font-size: 30px;
   }
 }
 
-@keyframes shake1 {
+@keyframes floatOver {
   0% {
     transform: translate3d(0, 0, 0);
   }
@@ -64,7 +67,7 @@
   }
 }
 
-@keyframes shake2 {
+@keyframes floatUnder {
   0% {
     transform: translate3d(0, 0, 0);
   }

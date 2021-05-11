@@ -1,0 +1,28 @@
+@use '@styles/helpers' as *;
+
+.container {
+  @include setContainerFluid(
+    (
+      $xxl: 10px,
+    )
+  );
+  max-width: $maxWidth_md;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.link img {
+  margin-right: 5px;
+  width: 24px;
+}
+
+.text {
+  margin-bottom: 10px;
+}

@@ -22,6 +22,7 @@ const config = {
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@store': path.resolve(__dirname, 'src/store'),
       '@helpers': path.resolve(__dirname, 'src/helpers'),
+      '@layouts': path.resolve(__dirname, 'src/layouts'),
     },
   },
   devServer: {
@@ -64,12 +65,6 @@ const config = {
           {
             loader: 'sass-loader',
           },
-          // {
-          //   loader: 'sass-resources-loader',
-          //   options: {
-          //     resources: ['./src/styles/test.scss'],
-          //   },
-          // },
         ],
       },
       {

@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '@components/Header';
-import Footer from '@components/Footer';
-import cnApp from '@styles/app.scss';
+import MainLayout from '@layouts/MainLayout';
 import cn from './LinkingPage.scss';
 
 function LinkingPage({ location, links }) {
   return (
-    <div className={cnApp.page}>
-      <Header pathname={location.pathname} />
+    <MainLayout location={location}>
       <div className={cn.container}>
         <h1 className={cn.title}>Pages</h1>
         <ul>
@@ -21,8 +18,7 @@ function LinkingPage({ location, links }) {
           ))}
         </ul>
       </div>
-      <Footer pathname={location.pathname} />
-    </div>
+    </MainLayout>
   );
 }
 

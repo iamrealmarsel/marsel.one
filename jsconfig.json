@@ -5,7 +5,8 @@
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
       "@store/*": ["./src/store/*"],
-      "@helpers/*": ["./src/helpers/*"]
+      "@helpers/*": ["./src/helpers/*"],
+      "@layouts/*": ["./src/layouts/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

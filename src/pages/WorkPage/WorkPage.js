@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import { work, getTags, getWorkByTags } from '@store';
 import Tags from '@components/Tags';
 import WorkList from '@components/WorkList';
-import Header from '@components/Header';
-import Footer from '@components/Footer';
+import MainLayout from '@layouts/MainLayout';
 
 function WorkPage({ location }) {
   const [currentTags, setTags] = useState([]);
@@ -21,12 +20,10 @@ function WorkPage({ location }) {
   }
 
   return (
-    <div className='page'>
-      <Header pathname={location.pathname} />
+    <MainLayout location={location}>
       <Tags tags={tags} currentTags={currentTags} onTagClick={handleTagClick} />
       <WorkList workList={workList} />
-      <Footer pathname={location.pathname} />
-    </div>
+    </MainLayout>
   );
 }
 

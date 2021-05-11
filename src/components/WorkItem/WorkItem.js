@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { isMobile } from '@helpers/utilities';
 import cn from './WorkItem.scss';
 
 const directionsIn = [cn.inTop, cn.inRight, cn.inBottom, cn.inLeft];
@@ -30,7 +31,7 @@ function WorkItem({ url, srcPreview, urlGithub, tags }) {
     overlayElement.classList.add(directionsIn[direction]);
   }
 
-  function handleWrapperPreviewLeave(event) {
+  function handleWrapperPreviewMouseLeave(event) {
     previewElement.style.transform = `scale(1) perspective(1000px) rotateY(0) rotateX(0)`;
 
     const direction = getDirection(event, previewElement.getBoundingClientRect());
@@ -52,10 +53,10 @@ function WorkItem({ url, srcPreview, urlGithub, tags }) {
     <div className={cn.item}>
       <div
         className={cn.wrapperPreview}
-        onMouseEnter={handleWrapperPreviewMouseEnter}
-        onMouseLeave={handleWrapperPreviewLeave}
+        onMouseEnter={isMobile() ? null : handleWrapperPreviewMouseEnter}
+        onMouseLeave={isMobile() ? null : handleWrapperPreviewMouseLeave}
       >
-        <div className={cn.preview} ref={previewRef} onMouseMove={handleWrapperPreviewMouseMove}>
+        <div className={cn.preview} ref={previewRef} onMouseMove={isMobile() ? null : handleWrapperPreviewMouseMove}>
           <img className={cn.imagePreview} src={`img/projects/${srcPreview}`} alt='project' />
           <div className={cn.overlay} ref={overlayRef}>
             <a href={url} className={cn.linkPreview} target='_blank' rel='noreferrer'>
@@ -65,7 +66,7 @@ function WorkItem({ url, srcPreview, urlGithub, tags }) {
               <div className={cn.tags}>{tags.join(', ')}</div>
               <div className={cn.icons}>
                 <a className={cn.linkWebsite} href={url} target='_blank' rel='noreferrer'>
-                  <img src='img/icons/logo-website.svg' alt='go to website' />
+                  <img src='img/icons/external-link.svg' alt='go to website' />
                 </a>
                 <a className={cn.linkGithub} href={urlGithub} target='_blank' rel='noreferrer'>
                   <img src='img/icons/logo-github.svg' alt='go to github' />

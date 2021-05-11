@@ -59,13 +59,6 @@ export default [
     year: '2018 January',
   },
   {
-    url: 'https://iamrealmarsel.github.io/projects/multi-page/sand-order',
-    urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/sand-order',
-    srcPreview: 'multi-page/sand-order.jpg',
-    tags: ['multi page'],
-    year: '2017 February',
-  },
-  {
     url: 'https://iamrealmarsel.github.io/projects/multi-page/swimming-academy/dist',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/multi-page/swimming-academy',
     srcPreview: 'multi-page/swimming-academy.jpg',

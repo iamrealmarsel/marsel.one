@@ -8,17 +8,16 @@
       $xxl: 10px,
     )
   );
-}
-
-.tags {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .tag {
+  line-height: 1;
   background-color: transparent;
   border: dashed 1px var(--color-blue2);
-  padding: 0 20px;
+  padding: 6px 20px;
   margin-right: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
   transition: 0.1s;
 }

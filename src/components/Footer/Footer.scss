@@ -17,19 +17,26 @@
   margin-top: auto;
 }
 
-.active {
-  font-weight: bold;
-}
-
 .link {
-  padding: 0 10px;
+  line-height: 1;
+  padding: 5px 10px;
   margin: 0 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
 
   &:hover {
     text-decoration: none;
   }
+
+  @include usebp($sm) {
+    font-size: 18px;
+  }
+}
+
+.active {
+  font-weight: 600;
 }
 
 .logoGithub {
