@@ -4,20 +4,20 @@ import cn from './Tags.scss';
 
 function Tags({ tags, currentTags, onTagClick }) {
   return (
-    <div className={cn.container}>
-      <div className={cn.tags}>
-        {tags.map((tag) => (
-          <button
-            className={`${cn.tag} ${currentTags.includes(tag) ? cn.active : ''} `}
-            type='button'
-            onClick={() => onTagClick(tag)}
-            key={tag}
-          >
-            {tag}
-          </button>
-        ))}
-      </div>
+    // <div className={cn.container}>
+    <div className={cn.tags}>
+      {tags.map((tag) => (
+        <button
+          className={`${cn.tag} ${currentTags.includes(tag) ? cn.active : ''} `}
+          type='button'
+          onClick={() => onTagClick(tag)}
+          key={tag}
+        >
+          {tag}
+        </button>
+      ))}
     </div>
+    // </div>
   );
 }
 
