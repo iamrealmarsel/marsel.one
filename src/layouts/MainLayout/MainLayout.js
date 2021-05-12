@@ -6,9 +6,9 @@ import cn from './MainLayout.scss';
 
 function MainLayout({ location, children, container }) {
   return (
-    <div className={cn.main}>
+    <div className={cn.wrapper}>
       <Header pathname={location.pathname} />
-      <main className={`${container && cn.container}`}>{children}</main>
+      <main className={`${cn.main} ${container && cn.container}`}>{children}</main>
       <Footer pathname={location.pathname} />
     </div>
   );

@@ -1,4 +1,4 @@
 # About
-Hello, people! Here is my work.  
-I love to study front-end development, design, marketing and also English ))  
-BOOM!
+
+Hello, world! 👋  
+This site is built with React, React Router, Sass, CSS Modules, Webpack.

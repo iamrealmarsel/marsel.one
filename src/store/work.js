@@ -40,4 +40,4 @@ export const linking = [
   },
 ];
 
-export default [...spa, ...onePage, ...email, ...multiPage];
+export default [...spa, ...onePage, ...multiPage, ...email];
