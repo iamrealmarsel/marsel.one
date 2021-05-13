@@ -17,7 +17,8 @@ export default [
     url: 'https://iamrealmarsel.github.io/projects/one-page/express-test',
     urlGithub: 'https://github.com/iamrealmarsel/projects/tree/main/one-page/express-test',
     srcPreview: 'one-page/express-test.jpg',
-    tags: ['spa', 'react'],
+    // tags: ['spa', 'react'],
+    tags: ['one page'],
     year: '2019 April',
   },
 ];
