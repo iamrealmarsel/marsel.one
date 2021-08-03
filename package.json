@@ -7,21 +7,17 @@
     "test": "eslint --ext .jsx --ext .js src/",
     "gh-pages:help": "gh-pages --help",
     "push": "gh-pages --dist 'dist' --message 'deployed updates'",
-    "build:prod": "webpack",
     "build": "webpack",
-    "deploy": "npm run build:prod && gh-pages --dist 'dist' --message 'deployed updates'",
+    "build:prod": "webpack",
+    "deploy": "npm run build:prod && npm run push",
     "start": "webpack serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamrealmarsel/marsel.one.git"
   },
   "author": "mars",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iamrealmarsel/marsel.one/issues"
   },
-  "homepage": "https://github.com/iamrealmarsel/marsel.one#readme",
+  "homepage": "https://marsel.one",
   "devDependencies": {
     "@babel/core": "7.13.10",
     "@babel/preset-env": "7.13.12",
